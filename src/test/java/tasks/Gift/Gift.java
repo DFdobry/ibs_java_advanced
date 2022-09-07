@@ -5,12 +5,14 @@ public class Gift {
     private String brand;
     private int price;
     private int weight;
+    private String uniqueParam;
 
 
-    public Gift(String brand, int price, int weight) {
+    public Gift(String brand, int price, int weight, String uniqueParam) {
         this.brand = brand;
         this.price = price;
         this.weight = weight;
+        this.uniqueParam = uniqueParam;
     }
 
     public String getBrand() {
@@ -19,6 +21,14 @@ public class Gift {
 
     public void setBrand(String brand) {
         this.brand = brand;
+    }
+
+    public String getUniqueParam() {
+        return uniqueParam;
+    }
+
+    public void setUniqueParam(String uniqueParam) {
+        this.uniqueParam = uniqueParam;
     }
 
     public int getPrice() {
