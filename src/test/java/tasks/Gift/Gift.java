@@ -5,14 +5,38 @@ public class Gift {
     private String brand;
     private int price;
     private int weight;
-    private String uniqueParam;
 
 
-    public Gift(String brand, int price, int weight, String uniqueParam) {
+
+    private double firstNumber;
+    private double secondNumber;
+
+    public Gift(double firstNumber, double secondNumber) {
+        this.firstNumber = firstNumber;
+        this.secondNumber = secondNumber;
+    }
+
+    public double getFirstNumber() {
+        return firstNumber;
+    }
+
+    public void setFirstNumber(double firstNumber) {
+        this.firstNumber = firstNumber;
+    }
+
+    public double getSecondNumber() {
+        return secondNumber;
+    }
+
+    public void setSecondNumber(double secondNumber) {
+        this.secondNumber = secondNumber;
+    }
+
+    public Gift(String brand, int price, int weight) {
         this.brand = brand;
         this.price = price;
         this.weight = weight;
-        this.uniqueParam = uniqueParam;
+
     }
 
     public String getBrand() {
@@ -21,14 +45,6 @@ public class Gift {
 
     public void setBrand(String brand) {
         this.brand = brand;
-    }
-
-    public String getUniqueParam() {
-        return uniqueParam;
-    }
-
-    public void setUniqueParam(String uniqueParam) {
-        this.uniqueParam = uniqueParam;
     }
 
     public int getPrice() {
@@ -46,6 +62,9 @@ public class Gift {
     public void setWeight(int weight) {
         this.weight = weight;
     }
+
+
+
 
     @Override
     public String toString() {
